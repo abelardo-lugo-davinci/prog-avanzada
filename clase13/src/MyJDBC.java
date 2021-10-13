@@ -5,11 +5,11 @@ public class MyJDBC {
 
         try {
 
-            Connection connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/jdbc-practica","root","root");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/jdbc","root","root");
 
             Statement statement = connection.createStatement();
 
-            ResultSet resultSet = statement.executeQuery("SELECT * FROM estudiantes;");
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM estudiante;");
             ResultSetMetaData resultSetMetaData = resultSet.getMetaData();
 
             // System.out.println(resultSetMetaData);
