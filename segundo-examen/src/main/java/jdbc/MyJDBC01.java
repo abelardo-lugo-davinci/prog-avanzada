@@ -25,14 +25,7 @@ public class MyJDBC01 {
         }catch (SQLException sqlException1){
 
             System.out.println(sqlException1);
-            if (connection != null){
-                try{
-                    connection.rollback();
-                }catch (SQLException sqlException2){
-                    System.out.println(sqlException2);
-                }
-            }
-
+            
         }finally {
 
             try {
